@@ -19,21 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Third-party licenses:
-
-SDL2 (Simple DirectMedia Layer)
-Copyright (c) 1997-2025 Sam Lantinga <slouken@libsdl.org>
-zlib license: https://www.libsdl.org/license.txt
-
-Dear ImGui
-Copyright (c) 2014-2025 Omar Cornut
-MIT license: https://github.com/ocornut/imgui/blob/master/LICENSE.txt
-
-stb_image
-Public domain / MIT license: https://github.com/nothings/stb/blob/master/stb_image.h
-
-WinLibs (MinGW-w64)
-GPLv3 with runtime exception: https://winlibs.com/

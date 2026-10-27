@@ -1,0 +1,25 @@
+# ---> Build outputs (scoped to the repo root so vendor/**/bin/ survives —
+# e.g. vendor/SDL2-2.32.10/x86_64-w64-mingw32/bin/SDL2.dll is required)
+/build/
+/out/
+/bin/
+
+# ---> Runtime file written next to the .exe
+settings.ini
+
+# ---> Vendored deps live in vendor/ (SDL2, imgui, stb) — keep the sources
+# and the x64 prebuilt libs. These are trimmed to keep the repo small.
+vendor/**/*.pdb
+vendor/**/*.tar.gz
+vendor/**/*.zip
+
+# ---> Nested git repos inside vendor/ must never be committed as
+# submodule pointers - they would silently drop the sources from the repo.
+vendor/**/.git/
+
+# ---> Toolchain / editor noise
+.vs/
+.vscode/
+*.user
+*.obj
+*.o

@@ -23,7 +23,8 @@ param(
     [string]$Version = "v1.0.0",
     [string]$InstallDir = "$env:LOCALAPPDATA\Programs\Pomodoro",
     [switch]$Uninstall,
-    [switch]$NoShortcuts
+    [switch]$NoShortcuts,
+    [switch]$NoLaunch
 )
 
 $ErrorActionPreference = "Stop"
@@ -140,7 +141,10 @@ Write-Host "  Hotkey:  Ctrl+Alt+P  (start / pause)"
 Write-Host "  Uninstall:  .\scripts\install.ps1 -Uninstall"
 Write-Host ""
 
-$answer = Read-Host "Launch Pomodoro now? (y/N)"
+$answer = ""
+if ([Environment]::UserInteractive -and -not $NoLaunch) {
+    try { $answer = Read-Host "Launch Pomodoro now? (y/N)" } catch { $answer = "" }
+}
 if ($answer -match '^(y|yes)$') {
     Start-Process -FilePath $exe -WorkingDirectory $InstallDir
 }

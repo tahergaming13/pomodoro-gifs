@@ -1,5 +1,11 @@
 # Pomodoro Desktop App
 
+[![Build & Release](https://github.com/tahergaming13/pomodoro-gifs/actions/workflows/build-release.yml/badge.svg)](https://github.com/tahergaming13/pomodoro-gifs/actions/workflows/build-release.yml)
+[![Release](https://img.shields.io/github/v/release/tahergaming13/pomodoro-gifs?color=brightgreen)](https://github.com/tahergaming13/pomodoro-gifs/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/tahergaming13/pomodoro-gifs/total?color=blue)](https://github.com/tahergaming13/pomodoro-gifs/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+![Platform](https://img.shields.io/badge/platform-Windows%20x64-0078D6)
+
 Floating, borderless, always-on-top Pomodoro timer for Windows 64-bit.
 C++17 · Dear ImGui + SDL2 + OpenGL · animated GIF per phase · global hotkey.
 
